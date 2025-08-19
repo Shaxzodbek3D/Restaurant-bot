@@ -1,0 +1,560 @@
+
+:root {
+  --gold: #d4af37;
+  --dark-bg: #1a1a1a;
+  --light-bg: #2a2a2a;
+  --white: #ffffff;
+}
+
+/* Full-body background and base styles */
+body {
+  background: linear-gradient(to bottom, var(--dark-bg), var(--light-bg));
+  color: var(--white);
+  font-family: 'Rubik', sans-serif;
+  min-height: 100vh;
+  max-height:95%;
+  max-width:95%;
+   padding-left: 15px
+}
+
+main.content {
+  padding-top: 70px; /* header balandligicha */
+  padding-bottom: 100px; /* footer joyi uchun */
+}
+
+
+.dark-header {
+  background-color: #121212;
+  border-bottom: 1px solid #444;
+  color: #d4af37;
+  font-size:15px;
+  max-height:40px;
+}
+.dark-header h5,
+.dark-header span {
+  color: #d4af37;
+}
+
+
+/* Card styles */
+.card {
+  width: 100%;
+  /*max-width: 95%;*/
+  text-align: center;
+  margin: 10px auto;
+  /*padding: 10px;*/
+  border: 2px solid var(--gold);
+  transition: transform 0.2s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #2a2a2ab0;
+  color: var(--white);
+  box-shadow: 4px 4px 12px rgb(255 183 2 / 59%);
+  font-size: 0.95rem; 
+
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+/* Button styles */
+.btn-outline-danger,
+.btn-savat {
+  color: var(--gold);
+  border: 1px solid var(--gold);
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 6px 18px;
+  transition: all 0.3s ease;
+}
+.btn-outline-danger:hover,
+.btn-outline-danger.active,
+.btn-savat:hover,
+.btn-savat.active {
+  background-color: var(--gold);
+  color: #000;
+}
+
+.btn-gold {
+  background-color: #d4af37;
+  color: #000;
+  border: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-buyurtma {
+  background-color: #d4af37;
+  color: #000;
+  border: none;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-gold:hover {
+  background-color: #d4af37;
+}
+
+.btn-buyurtma:hover {
+  background-color: #f8f8f8;
+}
+
+
+.bg-gold {
+  background-color: #d4af37 !important;
+  color: #000 !important;
+  width:100%;
+  height:40px;
+}
+
+.bg-gold-mini {
+  background-color: #d4af37 !important;
+  color: #000 !important;
+}
+.text-gold {
+  color: #d4af37 !important;
+}
+
+.btn-danger.rounded-circle {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: var(--gold);
+  color: #000;
+  border: none;
+}
+
+.btn-danger.rounded-circle:hover {
+  background-color: #b1902f;
+}
+
+/* Cart badge */
+#cart-count {
+  font-size: 12px;
+  padding: 4px 7px;
+  background-color: var(--gold);
+  color: #000;
+}
+
+/* Filter button group */
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
+}
+.filter-buttons .btn {
+  border-radius: 10px;
+  padding: 6px 16px;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  background-color: transparent;
+  transition: 0.3s ease;
+}
+.filter-buttons .btn:hover,
+.filter-buttons .btn.active {
+  background-color: var(--gold);
+  color: #000;
+}
+
+/* Footer */
+footer {
+  background-color: #1a1a1a;
+  border-top: 1px solid #444;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: #d4af37;
+  position: static !important;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.category-slider {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 10px;
+  padding: 0px;
+}
+.category-slider::-webkit-scrollbar {
+  display: none;
+}
+.category-slider .btn {
+  flex: 0 0 auto;
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 1px 3px;
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+.category-slider .btn.active,
+.category-slider .btn:hover {
+  background-color: var(--gold);
+  color: #000;
+  box-shadow: 0 0 8px rgba(212, 175, 55, 0.5);
+}
+
+
+.category-slider .btn.active {
+  transition: all 0.3s ease;
+  background-color: #d4af37;
+  color: #000;
+  border: none;
+}
+
+.btn-danger{
+    transition: all 0.3s ease;
+  background-color: #d4af37;
+  color: #000;
+  border: none;
+  height:52px;
+    
+}
+
+/* Sticky category block */
+
+.sticky-categories {
+  position: sticky;
+  top: 59px; /* header balandligiga teng! */
+  margin-top: -10px;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(2px); 
+  padding-top: 4px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  
+}
+
+/* Loader style */
+.spinner-border {
+  border: 0.25em solid var(--gold);
+  border-right-color: transparent !important;
+}
+#loader-wrapper {
+  background: linear-gradient(to bottom, #222 0%, #111 100%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.loader-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.loader-logo {
+  max-width: 120px;
+  margin-bottom: 20px;
+}
+
+.profile-icon {
+ font-size: 20px;
+  color: #2a2a2a;
+}
+
+.profile-button {
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  border: 2px solid #d4af37;
+  border-radius: 50%;
+  background-color: #d4af37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-icon {
+  font-size: 18px;
+  color: #2a2a2a;
+}
+
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 1; /* shaffoflik darajasi */
+}
+
+@media (max-width: 768px) {
+  #background-video {
+     /* mobilda video fon bo‘lmasin  */
+  }
+}
+
+
+.modal-title {
+    color: #ffd400;
+    margin-bottom: 0;
+    line-height: var(--bs-modal-title-line-height);
+}
+
+.text-muted {
+    color: #ffca00 !important;
+}
+
+.modal-content {
+  background-color: #1f1f1f;
+  border: 1px solid var(--gold);
+  border-radius: 20px;
+  /*padding: 20px;*/
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
+  color: var(--white);
+}
+
+.modal-header .modal-title {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--gold);
+}
+
+.modal-body p strong {
+  color: var(--gold);
+  font-size: 14px;
+}
+
+.modal-body .bg-secondary {
+  background-color: #333 !important;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+}
+.profile-modal {
+  background-color: #1f1f1f;
+  border: 1px solid var(--gold);
+  color: var(--white);
+  border-radius: 20px;
+}
+
+.modal-info-box {
+  background-color: #2a2a2a;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.btn-close-white {
+  filter: brightness(0) invert(1);
+}
+
+#last-orders small {
+    color: #bbbbbb !important;
+}
+
+.mt-header {
+  padding-top: 70px; /* header height kompensatsiyasi */
+}
+
+/* Header */
+header {
+  background-color: #121212;
+  padding: 10px 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  min-height: 60px;
+  color: var(--gold);
+}
+
+header h5, header span, header button {
+  color: var(--gold);
+}
+
+.btn-back {
+  background-color: #d4af37; /* tilla rang */
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 16px;
+  font-weight: 500;
+  box-shadow: 0 0 6px rgba(212, 175, 55, 0.3);
+  transition: all 0.3s ease;
+}
+.btn-back:hover {
+  background-color: #c49e2f;
+  color: #fff;
+}
+
+html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.btn-outline-secondary {
+    --bs-btn-color: #ffffff;
+    --bs-btn-border-color: #ffffff;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #6c757d;
+    --bs-btn-hover-border-color: #6c757d;
+    --bs-btn-focus-shadow-rgb: 108, 117, 125;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #6c757d;
+    --bs-btn-active-border-color: #6c757d;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #6c757d;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #6c757d;
+    --bs-gradient: none;
+}
+
+/* --- KARTALAR DIZAYNINI YAXSHILASH UCHUN YANGI STILLAR --- */
+
+/* 1. KARTANING ASOSIY STRUKTURASI VA RASM UCHUN */
+
+/* Asosiy kartadan ichki bo'shliqni (padding) olib tashlaymiz,
+   chunki rasm chetlarga tegib turishi kerak */
+.product-card {
+    padding: 0; /* Ichki bo'shliqni butunlay olib tashlash */
+    overflow: hidden; /* Rasm burchaklarini yumaloqlash uchun kerak */
+    box-shadow: 2px 2px 8px rgba(212, 175, 55, 0.4);
+    border-width: 1px;
+}
+
+/* Rasm endi kartaning to'liq kengligini egallaydi */
+.product-card .product-image {
+    width: 100%;
+    height: 140px; /* Rasm bo'yini kattalashtirdik */
+    object-fit: cover; /* Rasm sig'may qolsa, qirqib, to'ldirib turadi */
+    margin-top: 0;
+    margin-bottom: 0;
+    border-radius: 0; /* Rasmning o'z yumaloqligini bekor qilish */
+}
+
+/* Kartaning matn va tugmalar qismini alohida blokga olib, unga padding beramiz */
+.product-card .card-body {
+    padding: 12px; /* Matn va tugmalar uchun yangi ichki bo'shliq */
+}
+
+
+/* 2. MAHSULOT NOMLARI (SARLAVHA) UCHUN */
+
+.product-card .product-name {
+    font-size: 1rem; /* Shriftni kichraytirdik */
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+
+/* 3. MAHSULOT NARXI UCHUN */
+
+.product-card .product-price {
+    font-size: 0.95rem; /* O'lchami o'zgarishsiz */
+    font-weight: 700;  /* Qalin (bold) qildik */
+}
+
+
+/* 4. TUGMALAR UCHUN */
+
+/* Tugmalar bloki */
+.product-card .d-flex.justify-content-center {
+    margin-top: 12px; /* Tugmalar va narx orasida ko'proq joy */
+}
+
+/* "Savatchaga" tugmasi */
+.product-card .btn-add-cart {
+    padding: 8px 14px; /* O'lchamini kattalashtirdik */
+    font-size: 1rem;
+}
+
+/* Ma'lumot (info) tugmasi */
+.product-card .btn-info-icon {
+    padding: 8px 12px;
+    font-size: 0.9rem; /* Ikona kattalashadi */
+}
+
+/* Asosiy konteyner ("pill") */
+.qty-control {
+    display: inline-flex;  /* Elementlarni bir qatorga joylash */
+    align-items: center;    /* Vertikal markazlash (eng muhimi) */
+    justify-content: space-between; /* Elementlarni chetlarga yoyish */
+    padding: 2px 5px;       /* Ichki bo'shliqni sozlash */
+    min-width: 110px;       /* Minimal kenglik, siqilib qolmasligi uchun */
+    min-height: 42px;       /* Minimal balandlik */
+}
+
+.product-card .btn-qty {
+    background: transparent;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1.6rem;   /* Shriftni kattalashtirdik */
+    line-height: 1;      /* Chiziq balandligini shriftga tenglash (vertikal qiyshayishni to'g'rilaydi) */
+    padding: 0 8px;      /* Bosish maydonini kengaytirish */
+    cursor: pointer;
+    /* Tugma o'lchamini bekor qilamiz, padding bilan boshqaramiz */
+    width: auto;
+    height: auto;
+}
+
+.product-card .qty-value {
+    font-size: 1.2rem;   /* Son shriftini kattalashtirish */
+    font-weight: 500;
+    color: #000;
+}
+
+/* Rasm bosiladigan ekanligini ko'rsatish uchun kursor stilini o'zgartirish */
+.product-card .product-image {
+    cursor: pointer;
+}
+
+.row>* {
+     max-width: 100%;
+    padding-right: 0;
+    padding-left: 5px;
+    margin-top: 0;
+}
+
+.bi-cart-plus::before {
+    content: "\f23f";
+    padding-right: 10px;
+}
